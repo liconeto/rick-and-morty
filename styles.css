@@ -1,0 +1,115 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+.header {
+	overflow: hidden;
+	background-color: #f1f1f1;
+	padding: 10px 10px;
+}
+
+.header a {
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 25px;
+	border-radius: 4px;
+}
+
+.header a.logo {
+	font-size: 25px;
+	font-weight: bold;
+	box-shadow: 0 8px 16px 0 rgba(0, 240, 240, 0.85);
+}
+
+.header a:hover {
+	
+	color: black;
+	background: linear-gradient(to left, rgba(248, 0, 248, 0.75), rgba(0, 240, 240, 0.75));
+	box-shadow: 0 4px 8px 0 rgba(248, 0, 248, 0.85);
+}
+
+.header-right {
+	float: right;
+	box-shadow: 0 8px 16px 0 rgba(0, 240, 240, 0.85);
+}
+
+.logo-rick-and-morty {
+	display: flex;
+	justify-content: center;
+	margin: 1rem 0;
+}
+
+.logo-rick-and-morty img {
+	width: 60%;
+}
+
+.search {
+	display: flex;
+	justify-content: center;
+}
+
+.search input {
+	height: 2.5rem;
+	width: 30%;
+	border-radius: 6px;
+	border: 1px solid #b9b9b9;
+	padding: 0 1rem;
+	background: linear-gradient(to left, rgba(248, 0, 248, 0.75), rgba(0, 240, 240, 0.75));
+}
+
+.search input:hover {
+	height: 2.5rem;
+	width: 30%;
+	border-radius: 6px;
+	border: 1px solid #b9b9b9;
+	padding: 0 1rem;
+	background: linear-gradient(to left, rgba(0, 240, 240, 0.75), rgba(248, 0, 248, 0.75));
+}
+
+.characters {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(248, 0, 248, 0.35);
+	transition: 0.3s;
+	width: 23%;
+	margin: 1rem;
+	
+}
+
+.card img {
+	width: 100%;
+}
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 240, 240, 0.35);
+}
+
+.container {
+	padding: 2px 16px;
+}
+
+@media screen and (max-width: 500px) {
+	.header a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+
+	.header-right {
+		float: none;
+	}
+}
