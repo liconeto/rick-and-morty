@@ -64,7 +64,8 @@ body {
 	border-radius: 6px;
 	border: 1px solid #b9b9b9;
 	padding: 0 1rem;
-	background: linear-gradient(to left, rgba(248, 0, 248, 0.75), rgba(0, 240, 240, 0.75));
+	background: linear-gradient(315deg, rgba(248, 0, 248, 0.75), rgba(0, 240, 240, 0.75), rgba(240, 240, 0,0.75));
+	animation: gradient 15s ease infinite;
 }
 
 .search input:hover {
@@ -73,7 +74,7 @@ body {
 	border-radius: 6px;
 	border: 1px solid #b9b9b9;
 	padding: 0 1rem;
-	background: linear-gradient(to left, rgba(0, 240, 240, 0.75), rgba(248, 0, 248, 0.75));
+	background: linear-gradient(to left, rgba(0, 240, 240, 0.75), rgba(248, 0, 248, 0.75), rgba(240, 240, 0,0.75));
 }
 
 .characters {
@@ -83,8 +84,8 @@ body {
 }
 
 .card {
-	box-shadow: 0 4px 8px 0 rgba(248, 0, 248, 0.35);
-	transition: 0.3s;
+	box-shadow: 0 8px 16px 0 rgba(0, 240, 240, 0.35);
+	
 	width: 23%;
 	margin: 1rem;
 	
@@ -95,7 +96,9 @@ body {
 }
 
 .card:hover {
-	box-shadow: 0 8px 16px 0 rgba(0, 240, 240, 0.35);
+	
+	box-shadow: 0 4px 8px 0 rgba(248, 0, 248, 0.35);
+	transition: box-shadow 0.4s ease-in-out;
 }
 
 .container {
